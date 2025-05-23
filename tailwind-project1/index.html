@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="h-screen flex justify-center items-center bg-darkSlateGrey">
+
+    <div class="bg-white w-[375px] lg:flex lg:items-center lg:w-[800px] lg:p-6 lg:rounded-3xl newsletter-form">
+        <img src="./img/illustration-sign-up-mobile.svg" alt="" class="w-full lg:hidden">
+        <div class="px-6 pb-8 space-y-6 text-darkSlateGrey">
+            <p class="my-6 text-4xl font-bold">Stay updated!</p>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul>
+                <li class="flex items-start"><img src="./img/icon-list.svg" alt="" class="mr-4">Product discovery and building what matters</li>
+                <li class="flex items-start"><img src="./img/icon-list.svg" alt="" class="mr-4">Measuring to ensure updates are a success</li>
+                <li class="flex items-start"><img src="./img/icon-list.svg" alt="" class="mr-4">And much more!</li>
+            </ul>
+            <div>
+                <label for="email" class="font-bold text-sm mt-6 block mb-2">Email address</label>
+                <input type="text" id="email" placeholder="email@company.com" class="border border-gray-400 w-full rounded-lg p-4">
+                <p class="text-red-600 hidden warning">Invail email address!</p>
+            </div>
+            <button class="w-full bg-darkSlateGrey p-4 text-white rounded-lg hover:bg-charcoalGrey transition-colors newsletter-form-btn">Subscribe to monthly newsletter</button>
+        </div>
+        <img src="./img/illustration-sign-up-desktop.svg" alt="" class="sm:hidden lg:block">
+    </div>
+
+    <div class="bg-white w-[375px] hidden success">
+        <div class="px-6 pb-8 space-y-6 text-darkSlateGrey">
+            <img src="./img/icon-list.svg" alt="" class="w-[50px] pt-36">
+            <p class="my-6 text-4xl font-bold">Thanks for subscribing!</p>
+            <p class="pb-64">A confirmation email has been sent to <span class="font-bold">ash@loremcompany.com</span>. Please open it and click the button insideto confirm your subscription</p>
+            <button class="w-full bg-darkSlateGrey p-4 text-white rounded-lg hover:bg-charcoalGrey transition-colors newsletter-form-btn-success">Dismiss message</button>
+        </div>
+    </div>
+  
+    <script src="./js/script.js"></script>
+</body>
+</html>

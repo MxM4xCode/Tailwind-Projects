@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <nav class="py-6 mx-4 uppercase">
+        <div class="container flex justify-between">
+            <img src="./img/logo.svg" alt="" class="w-10 lg:w-8">
+            <ul class="hidden lg:flex items-center space-x-5 text-md">
+                <li class="hover:underline"><a href=""></a>home</li>
+                <li class="hover:underline"><a href=""></a>about</li>
+                <li class="hover:underline"><a href=""></a>works</li>
+                <li class="hover:underline"><a href=""></a>contact</li>
+            </ul>
+            <button class="px-3 py-1 lg:hidden">
+                <img src="./img/bars.svg" alt="" class="w-12">
+            </button>
+        </div>
+    </nav>
+
+    <main class="mx-4">
+        <section class="container flex flex-col items-center p-8 bg-zinc-900 text-white rounded-3xl">
+            <div class="max-w-prose flex flex-col justify-center items-center text-center my-14">
+                <h1 class="text-5xl font-bold">Visual Designer Based in Indonesia</h1>
+                <p class="mt-4 mb-6 text-sm font-extralight text-zinc-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, accusantium. Qui modi aut at quisquam, voluptates exercitationem.</p>
+                <a href="" class="px-6 py-3 font-bold rounded-3xl bg-gradient-to-b from-orange-400 to-orange-500 hover:to-orange-700">Contact Me</a>
+            </div>
+            <div class="flex flex-col gap-6 lg:flex-row">
+                <div class="img-left relative rounded-3xl overflow-hidden hover:scale-95 transition-transform">
+                    <img src="./img/image1.png" alt="">
+                    <p class="absolute bottom-6 left-8 font-bold text-lg">Branding Project</p>
+                </div>
+                <div class="img-right relative rounded-3xl overflow-hidden hover:scale-95 transition-transform">
+                    <img src="./img/image2.png" alt="">
+                    <p class="absolute bottom-6 left-8 font-bold text-lg">Branding Project</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container flex flex-col justify-center items-center my-32">
+            <p class="uppercase text-sm font-extralight text-zinc-400 tracking-[6px]">About Me</p>
+            <img src="./img/avatar.png" alt="" class="w-56 my-12">
+            <p class="max-w-[32ch] px-12 text-3xl text-zinc-800 font-medium lg:px-0">Hi I'm Donnie and I am passionate about everything that has to do with Digital Design and Art Direction. I enjoy working with agencies and enthusiastic people who want to solve problems through beautiful designs and experiences.</p>
+        </section>
+    </main>
+    
+</body>
+</html>
